@@ -1,0 +1,17 @@
+body{
+    background:rgb(67, 143, 67);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.comment-container{
+    display: flex;
+}
+.comment{
+    flex-grow: 1;
+    background: #fff;
+    padding: 20px;
+    margin: 10px 10px;
+}
