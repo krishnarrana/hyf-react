@@ -1,0 +1,12 @@
+.header{
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px;
+        background: $primary-color;
+        color:$white;
+        font-size: $font-size-xlg;
+        font-weight: bold;
+        box-shadow: 0 0 5px 2px rgba(0,0,0,.3)
+    }
+}
