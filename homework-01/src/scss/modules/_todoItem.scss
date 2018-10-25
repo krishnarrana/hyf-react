@@ -1,5 +1,4 @@
 
-
 .todo-item{
     display: flex;
     background: #fff;
@@ -21,7 +20,15 @@
         margin: 23px 20px;
         font-size: 12px;
         padding: 3px 8px;
-        color: #fff;
+        color: $white;
         background: $danger;
+    }
+}
+.todo-item--done{
+    background: $gray-300;
+    box-shadow: none;
+    opacity: .5;
+    & .todo-item__title{
+        text-decoration: line-through;        
     }
 }
