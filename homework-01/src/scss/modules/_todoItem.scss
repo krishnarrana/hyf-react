@@ -23,6 +23,12 @@
         color: $white;
         background: $danger;
     }
+    &__btn--done{
+        font-size: 12px;
+        padding: 3px 8px;
+        color: $white;
+        background: $success;
+    }
 }
 .todo-item--done{
     background: $gray-300;

@@ -6,7 +6,6 @@ class TodoInput extends Component {
   
    
     render() { 
-        console.log(this.props.newTodo)
         return ( 
             <form className="todo-input" onSubmit={this.props.addTodo}>
                 <input 

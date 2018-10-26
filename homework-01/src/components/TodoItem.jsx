@@ -21,11 +21,14 @@ class TodoItem extends Component {
                         </span>
                     </h2>
                     <div>
-                        <button 
-                            className="btn btn--white todo-item__btn--done" 
-                            onClick={()=>{}}>
-                                Done
-                        </button>
+                        {
+                            !this.props.todo.complete?
+                            <button 
+                                className="btn btn--white todo-item__btn--done" 
+                                onClick={()=>{this.props.completeTodoTask(this.props.index)}}>
+                                    Done
+                            </button> : ""
+                        }
                         <button 
                             className="btn btn--white todo-item__btn--delete" 
                             onClick={()=>{this.props.handleDelete(this.props.todo)}}>

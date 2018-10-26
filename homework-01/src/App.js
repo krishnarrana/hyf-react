@@ -26,6 +26,17 @@ class App extends Component {
     this.handleInputChange= this.handleInputChange.bind(this);
     this.handleDelete= this.handleDelete.bind(this);
     this.handleDateChange = this.handleDateChange.bind(this);
+    this.completeTodoTask= this.completeTodoTask.bind(this)
+  }
+  completeTodoTask(index){
+    console.log(this.state.todoList)
+    let newTodoList= this.state.todoList.slice();
+    newTodoList[index].complete=true;
+
+    console.log(newTodoList)
+    this.setState({
+        todoList:newTodoList
+      });
   }
   handleDateChange(date) {
     console.log(date._d.getDate())
@@ -75,7 +86,7 @@ class App extends Component {
         <Header title="React Todo App" />
         <div className="app__container">
           
-          <TodoList todoList={this.state.todoList} handleDelete={this.handleDelete}/>
+          <TodoList todoList={this.state.todoList} handleDelete={this.handleDelete} completeTodoTask={this.completeTodoTask}/>
           <TodoInput 
             newTodo={this.state.newTodo} 
             addTodo= {this.addTodo} 
