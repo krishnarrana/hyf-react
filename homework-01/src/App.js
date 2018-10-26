@@ -84,9 +84,11 @@ class App extends Component {
     return (
       <div className="app">
         <Header title="React Todo App" />
-        <div className="app__container">
-          
-          <TodoList todoList={this.state.todoList} handleDelete={this.handleDelete} completeTodoTask={this.completeTodoTask}/>
+        <div className="app__container">          
+          <TodoList 
+            todoList={this.state.todoList} 
+            handleDelete={this.handleDelete} 
+            completeTodoTask={this.completeTodoTask}/>
           <TodoInput 
             newTodo={this.state.newTodo} 
             addTodo= {this.addTodo} 

@@ -20,7 +20,7 @@ class TodoItem extends Component {
                             {" "+this.props.todo.dueDate._d.getFullYear()}
                         </span>
                     </h2>
-                    <div>
+                    <div className="btn-list">
                         {
                             !this.props.todo.complete?
                             <button 
@@ -34,7 +34,6 @@ class TodoItem extends Component {
                             onClick={()=>{this.props.handleDelete(this.props.todo)}}>
                                 Delete
                         </button>
-                        
                     </div>
                 </div>
             </div>

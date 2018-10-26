@@ -17,7 +17,7 @@
         opacity: .8;
     }
     &__btn--delete{
-        margin: 23px 20px;
+        margin: 23px 10px 10px 5px;
         font-size: 12px;
         padding: 3px 8px;
         color: $white;
@@ -31,10 +31,14 @@
     }
 }
 .todo-item--done{
+    margin: 23px 10px 10px;
     background: $gray-300;
     box-shadow: none;
     opacity: .5;
     & .todo-item__title{
         text-decoration: line-through;        
     }
+}
+.btn-list{
+    min-width: 160px;;
 }
